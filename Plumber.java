@@ -193,7 +193,7 @@ public class Plumber {
      */
     private List createPipePath(@NotNull Cell cell, @NotNull List<Direction> directionList) {
 
-        List<PlumbingProduct> pipeList = new ArrayList<>();
+        List<PlumbingProduct> pipeList = new LinkedList<>(); // commit 5
         cell = cell.neighbor(directionList.get(0));
 
         for (int i = 1; i < directionList.size(); i++) {
