@@ -60,9 +60,9 @@ public class Drain extends PlumbingProduct {
     //------  Работа со слушателями------------------------
 
     List<WaterStoppedActionListener> FlowActionListeners = new ArrayList<>();
-
+	
     // присоединяет слушателя
-   /* public void addWaterStoppedActionListener(WaterStoppedActionListener l) {
+    public void addWaterStoppedActionListener(WaterStoppedActionListener l) { // commit 8
 
         if (FlowActionListeners.contains(l) == false)
             FlowActionListeners.add(l);
@@ -80,5 +80,5 @@ public class Drain extends PlumbingProduct {
         for (WaterStoppedActionListener FlowActionListener : FlowActionListeners) {
             FlowActionListener.waterStopped(new WaterStoppedActionEvent(this));
         }
-    }*/
+    } // commit 8
 }

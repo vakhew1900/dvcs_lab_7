@@ -16,7 +16,7 @@ public class GameField {
     /**
      * Список всех клеток
      */
-    private List<Cell> cells = new ArrayList<>(); // commit 5
+    private List<Cell> cellList = new LinkedList<>(); // commit 8
 
     /**
      * Сантехник, что раставляет водопровод на поле
@@ -121,7 +121,7 @@ public class GameField {
         }
 
         int index = row * width() + col;
-        return cells.get(row * width() + col); // commit 5
+        return cellList.get(row * width() + col) + 1; // commit 8
     }
 
 
