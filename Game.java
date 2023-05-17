@@ -18,20 +18,20 @@ public class Game implements WaterStoppedActionListener {
     /**
      * Статус игры - идет
      */
-    public final static int RUNNING = 0;
+    public final static int RUNNING = 0; // commit 2
 
 
     /**
      * Статус игры - проигрыш
      */
-    public final static int LOSE = 1;
+    public final static int LOSE = 2; // commit 2
 
     /**
      * статус игры - победа
      */
-    public final static int WIN = 2;
+    public final static int WIN = 3; // commit 2
 
-    public final static int WATER_START = 3;
+    public final static int WATER_START = 4; // commit 2
 
     /**
      * Статус игры

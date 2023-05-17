@@ -79,10 +79,10 @@ public class Main {
         }
 
         private JButton createRestartButton(){
-            JButton button = new JButton("Перезапустить");
-            button.setAlignmentX(Component.CENTER_ALIGNMENT);
+            JButton btn = new JButton("Перезапустить"); // commit 2
+            btn.setAlignmentX(Component.CENTER_ALIGNMENT); // commit 2
 
-            return button;
+            return btn;  // commit 2
         }
 
        private class WaterStartAction implements ActionListener{
