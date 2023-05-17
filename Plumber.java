@@ -170,7 +170,7 @@ public class Plumber {
      */
     private List<Direction> convertCellPathToDirectionPath(@NotNull List<Cell> cellPath) {
 
-        List<Direction> directionList = new LinkedList<>(); // commit 4
+        List<Direction> directions = new ArrayList<>(); // commit 6
 
         for (int i = 1; i < cellPath.size(); i++) {
             Direction direction = cellPath.get(i - 1).neighborDirection(cellPath.get(i));
@@ -179,10 +179,10 @@ public class Plumber {
                 throw new IllegalArgumentException("Illegal createCellPath");
             }
 
-            directionList.add(direction);
+            directions.add(direction); // commit 6
         }
 
-        return directionList;
+        return directions; // commit 6
     }
 
     /**

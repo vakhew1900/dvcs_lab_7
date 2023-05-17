@@ -11,11 +11,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        SwingUtilities.invokeLater(GamePanel::new);
+        SwingUtilities.invokeLater(MyGamePanel::new); // commit 6
 
     }
 
-    public static class GamePanel extends JFrame {
+    public static class MyGamePanel extends JFrame { // commit 6
 
         Game game;
         JPanel mainPanel;
