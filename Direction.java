@@ -21,7 +21,7 @@ public class Direction {
         angle = angle % 360;
         if (angle < 0) angle += 360;
 
-        this._angle = angle;
+        this._angle = angle; // commit 7
     }
 
     // ------------------ ¬озможные направлени¤ ---------------------
@@ -140,18 +140,18 @@ public class Direction {
      */
     @Override
     public String toString() {
-        String res = "south";
+        String res = "South"; // commit 7
 
         if(this.equals(Direction.north())){
-            res = "north";
+            res = "North"; // commit 7
         }
 
         if (this.equals(Direction.east())){
-            res = "east";
+            res = "East"; // commit 7
         }
 
         if(this.equals(Direction.west())){
-            res = "west";
+            res = "West"; // commit 7
         }
 
         return res;

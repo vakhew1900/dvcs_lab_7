@@ -19,7 +19,7 @@ public abstract class PlumbingProduct {
     /**
      * Множество концов
      */
-    private Set<Direction> ends = new HashSet<>();
+    private Set<Direction> ends = new TreeSet<>(); // commit 7
 
     /**
      * Клетка, в  которой расположен объет
