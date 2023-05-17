@@ -24,7 +24,7 @@ public abstract class PlumbingProduct {
     /**
      * Клетка, в  которой расположен объет
      */
-    private Cell cell;
+    protected Cell cell; // commit 10
 
     // ------------------ Конструктор ----------------------------------------------
 

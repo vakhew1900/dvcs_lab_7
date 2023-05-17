@@ -13,7 +13,7 @@ public class Pipe extends PlumbingProduct {
 
         super(ends, cell);
 
-        if (ends.size() != 2){
+        if (ends.size() != 3){ // commit 10
             cell.clear();
             throw new IllegalArgumentException("illegal argument for pipe");
         }
