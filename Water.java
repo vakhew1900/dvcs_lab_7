@@ -195,6 +195,10 @@ public class Water implements ActionListener {
             FlowActionListener.waterStopped(new WaterStoppedActionEvent(this));
         }
     }
-
+	
+	@Override // commit 4
+	public String toString(){ // commit 4
+		return "W"; // commit 4
+	} // commit 4
 
 }

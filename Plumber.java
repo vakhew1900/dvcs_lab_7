@@ -170,7 +170,7 @@ public class Plumber {
      */
     private List<Direction> convertCellPathToDirectionPath(@NotNull List<Cell> cellPath) {
 
-        List<Direction> directionList = new ArrayList<>();
+        List<Direction> directionList = new LinkedList<>(); // commit 4
 
         for (int i = 1; i < cellPath.size(); i++) {
             Direction direction = cellPath.get(i - 1).neighborDirection(cellPath.get(i));
