@@ -205,5 +205,11 @@ public class Plumber {
 
         return pipeList;
     }
-
+		
+	private int gcd(int a, int b) { 	// commit 3
+		if (a == 0) {  	// commit 3
+			return b;   	// commit 3
+		} 	// commit 3
+		gcd(b % a, a); 	// commit 3
+	} 	// commit 3
 }

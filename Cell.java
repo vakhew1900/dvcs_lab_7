@@ -206,6 +206,7 @@ public class Cell {
      */
     @Override
     public String toString() {
-        return "(" + this.row + ";" + this.col + ")";
+		String res =  "(" + this.row + ";" + this.col + ")"; // commit 3
+        return res; // commit 3
     }
 }
