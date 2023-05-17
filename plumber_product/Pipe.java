@@ -20,17 +20,17 @@ public class Pipe extends PlumbingProduct {
     }
 
     public void rotate(){
-        if (isFilled()){
-            return;
-        }
-
-        Set<Direction> newEnds = new HashSet<>();
-
-        for(Direction end : getEnds()){
-            newEnds.add(end.clockwise());
-        }
-
-        setEnds(newEnds);
+	
+        if (isFilled() == false){ 	// commit 9
+		// осуществляем поворот для каждого концаы 	// commit 9
+			Set<Direction> newEnds = new HashSet<>(); 	// commit 9
+                                                	// commit 9
+			for(Direction end : getEnds()){  	// commit 9
+				newEnds.add(end.clockwise()); 	// commit 9s
+			} 	// commit 9
+            	// commit 9
+			setEnds(newEnds); 	// commit 9
+		} 	// commit 9
     }
 
     @Override

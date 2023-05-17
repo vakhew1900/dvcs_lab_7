@@ -33,7 +33,7 @@ public class Source extends PlumbingProduct {
      * @param end - конец источника
      * @param cell - клетка, в которой будет расположен наш объект
      */
-    public Source(@NotNull  Direction end, Cell cell){
+    protected Source(@NotNull  Direction end, Cell cell){ // commit 9
         this(Stream.of(end).collect(Collectors.toSet()), cell);
     }
 }
