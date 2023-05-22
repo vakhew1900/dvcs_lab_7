@@ -9,7 +9,7 @@ public class GameFinishedActionEvent extends EventObject {
      * @param source the object on which the Event initially occurred
      * @throws IllegalArgumentException if source is null
      */
-    public GameFinishedActionEvent(Object source) {
-        super(source);
+    public GameFinishedActionEvent(Object s) { // commit 11
+        super(s); // commit 11;
     }
 }
